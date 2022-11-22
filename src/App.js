@@ -50,16 +50,30 @@ const customers =[
 'job':'대학생'
 
 }
-
+ 
 
 ]
 
 class App extends Component {
 
  render(){
+
+  const {classes} = this.props
   return (
    <div>
-    {
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell>번호</TableCell>
+          <TableCell>이미지</TableCell>
+          <TableCell>이름</TableCell>
+          <TableCell>생년월일</TableCell>
+          <TableCell>성별</TableCell>
+          <TableCell>직업</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+      {
       customers.map(c =>{
         return(<
           Customer
@@ -75,7 +89,9 @@ class App extends Component {
 
       })
 
-    }
+    } 
+      </TableBody>
+    </Table>
 
    </div>
   );

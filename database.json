@@ -2,5 +2,6 @@
     "host" : "127.0.0.1",
     "user" : "pro",
     "password" :"pro",
+    "port" :"3306",
     "database" : "test"
 }

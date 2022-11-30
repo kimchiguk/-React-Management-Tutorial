@@ -2,32 +2,16 @@ import React,{Component} from 'react';
 import Customer from './components/Customer';
 import './App.css';
 import Table from '@material-ui/core/Table';
-import paper from '@material-ui/core/Paper';
+// import paper from '@material-ui/core/Paper';
 import TableHead from '@material-ui/core/TableHead';
 import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
-import {withstyles} from '@material-ui/core/styles';
-
-const styles = theme =>({
-  root:{
-    width:'100%',
-    marginTop:theme.spacing.unit =3,
-    overflowX:"auto"
-  },
-  table:{
-    minWidth:1080
-  }
-}
-
-)
-
-
-
+// import {withstyles} from '@material-ui/core/styles';
 class App extends Component {
 
   state={
-    customers:""
+   customers:''
 
   }
 componentDidMount(){
@@ -45,7 +29,7 @@ return body;
  
   render(){
 
-  const {classes} = this.props
+  // const {classes} = this.props
   return (
    <div>
     <Table>
@@ -72,7 +56,7 @@ return body;
           job={c.job}
          />
         );
-      }):""} 
+      }):''} 
       </TableBody>
     </Table>
 
